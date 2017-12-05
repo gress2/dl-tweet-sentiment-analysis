@@ -1,0 +1,54 @@
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{svg}
+
+\definecolor{lightgrey}{rgb}{0.95, 0.95, 0.95}
+
+\lstdefinestyle{custom1}{
+backgroundcolor=\color{lightgrey},
+language=C++,
+basicstyle=\small\sffamily,
+numbers=right,
+numberstyle=\tiny,
+frame=single,
+columns=fullflexible,
+showstringspaces=false,
+captionpos=b,
+numbersep=-5pt
+}
+
+\title{\LARGE \bf
+Tweet Sentiment Analysis using Deep Learning
+}
+\author{Collin Gress, Vincent Reverdy}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+\begin{abstract}
+\lipsum[100]
+\end{abstract}
+\section{Introduction}
+\lipsum[200]
+\section{Results/Benchmarking}
+\lipsum[100]
+\section{Next Steps}
+\subsection{More Data Types}
+\lipsum[50]
+\subsection{Standardization?}
+\lipsum[50]
+\section{CONCLUSIONS}
+\lipsum[100]
+\addtolength{\textheight}{-12cm} 
+\section*{APPENDIX}
+Appendixes should appear before the acknowledgment.
+\section*{ACKNOWLEDGMENT}
+\lipsum[100]
+References are important to the reader; therefore, each citation must be complete and correct. If at all possible, references should be commonly available publications.
+%\bibliography{bibliography}
+%\bibliographystyle{acm}
+\end{document}
