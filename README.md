@@ -5,3 +5,7 @@ A deep learning system for binary classification tweet sentiment analysis
 ```
 pip install -r requirements.txt
 ```
+If not yet done:
+```
+unzip data/Sentiment-Analysis-Dataset.zip
+```
