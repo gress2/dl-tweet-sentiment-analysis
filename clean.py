@@ -28,5 +28,5 @@ def clean(df, tokenizer='nltk-tweet', stemmer='porter'):
         stmmr = { stem: lambda token: token }
 
     df['tokens'] = df.apply(lambda row: map(stmmr.stem, tknzr.tokenize(row['SentimentText'])), axis=1)
-    return df
+    return df.drop(['SentimentText'], axis=1)
 
