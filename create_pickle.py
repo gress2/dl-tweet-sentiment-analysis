@@ -10,7 +10,7 @@ csv_file = argv[1]
 pickle_file = argv[2]
 
 df = read_csv(csv_file, delimiter=',', quotechar='"', error_bad_lines=False, 
-        doublequote=True, quoting=csv.QUOTE_ALL, skipinitialspace=True) 
+        doublequote=True, quoting=csv.QUOTE_ALL, skipinitialspace=True, nrows=10000) 
 df = df.drop(['SentimentSource'], axis=1)
 df.to_pickle(pickle_file)
 

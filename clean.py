@@ -11,7 +11,7 @@ def pad(iterable, size, padding=None):
 
 tokenizer = 'nltk-tweet'
 stemmer = 'porter'
-pickle_name = 'small'
+pickle_name = '10k'
 df = read_pickle('data/' + pickle_name +  '.pd')
 
 print('Cleaning dataframe using tokenizer: {0} and stemmer: {1}'.format(tokenizer, stemmer))
